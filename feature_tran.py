@@ -1,7 +1,3 @@
-# @Author  : Czq
-# @Time    : 2019/10/14 16:45
-# @File    : feature_tran.py
-
 from datetime import datetime
 
 #根据身份证衍生省份性别年龄特征
