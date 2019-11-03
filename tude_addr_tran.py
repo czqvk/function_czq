@@ -1,7 +1,3 @@
-# @Author  : Czq
-# @Time    : 2019/10/29 15:12
-# @File    : tude_addr_tran.py
-
 import pandas as pd
 import json
 import re
@@ -196,7 +192,7 @@ class tude_addr_tran():
 
 if __name__ == '__main__':
     # 读取数据
-    with open('H:\ccb\文档资料\项目\埋点行为分析\数据转换\china-region.json', encoding='utf-8') as f:
+    with open('china-region.json', encoding='utf-8') as f:
         region_data = json.load(f)
 
     tat = tude_addr_tran(region_data)
