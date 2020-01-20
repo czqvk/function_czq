@@ -4,11 +4,11 @@ import json
 from datetime import datetime
 import os
 
+## 根据身份证可以得到省份、具体到区县的地址信息、年龄、性别信息
+## 需要输出对应信息，只需更改参数info为['province','address','sex','age']其中一个
 class idcard_res():
     def __init__(self):
-        data_loc = os.path.abspath(os.path.dirname(__file__))
-        load_loc = os.path.join(data_loc,'id')
-        with open(load_loc, 'r+',encoding='gbk') as f:
+        with open(os.getcwd() + '/' +'id', 'r+') as f:
             da = f.read()
             self.idcard_addr = {d.split()[0]:d.split()[1] for d in da.splitlines()}
 
@@ -55,6 +55,10 @@ class idcard_res():
         return age
 
     def find(self,idcard,info = 'address'):
+        '''
+        :param info: 可选['province','address','sex','age']
+        :return: 输出信息
+        '''
         idcard = self.old_idcard_tran(idcard)
         if idcard:
             if info == 'address':
@@ -83,4 +87,4 @@ class idcard_res():
 
 if __name__ == '__main__':
     id_info = idcard_res()
-    print(id_info.find('612129198106120810','province'))
+    print(id_info.find('612129198106120810','address'))
