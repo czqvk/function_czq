@@ -1,0 +1,22 @@
+2020-01-02 14:22:44,018 -- deprecation.py -- WARNING -- From D:\work\anaconda\lib\site-packages\tensorflow_core\python\ops\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-01-02 14:22:44,288 -- deprecation.py -- WARNING -- From D:\work\anaconda\lib\site-packages\tensorflow_core\python\ops\nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-01-02 14:23:18,943 -- deprecation.py -- WARNING -- From D:\work\anaconda\lib\site-packages\tensorflow_core\python\ops\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-01-02 14:23:19,187 -- deprecation.py -- WARNING -- From D:\work\anaconda\lib\site-packages\tensorflow_core\python\ops\nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-01-17 14:17:14,258 -- deprecation.py -- WARNING -- From D:\work\anaconda\lib\site-packages\tensorflow_core\python\ops\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-01-17 14:17:14,501 -- deprecation.py -- WARNING -- From D:\work\anaconda\lib\site-packages\tensorflow_core\python\ops\nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-01-17 14:17:24,535 -- lstm.py -- INFO -- params: {'drop_out': 0.4, 'LSTM_layers': 50, 'loss': 'binary_crossentropy', 'optimizer': 'adam', 'batch_size': 64, 'epochs': 2}
+ epoch_eva(train_auc,val_auc) : {'auc': [0.499599358974359, 0.5136217948717948], 'val_auc': [0.49978289188015634, 0.4780720798957881]}
+ ks : 0.121580547112462
+ »ìÏý¾ØÕó : 0.4780720798957881
