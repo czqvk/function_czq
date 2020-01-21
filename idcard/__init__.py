@@ -1,0 +1,1 @@
+from .idcard import idcard_res

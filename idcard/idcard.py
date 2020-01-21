@@ -6,9 +6,12 @@ import os
 
 ## 根据身份证可以得到省份、具体到区县的地址信息、年龄、性别信息
 ## 需要输出对应信息，只需更改参数info为['province','address','sex','age']其中一个
+#调用方法：from idcard import idcard_res, i = idcard_res(), i.find('612129198106120810')_
 class idcard_res():
     def __init__(self):
-        with open(os.getcwd() + '/' +'id', 'r+') as f:
+        loc = os.path.dirname(__file__)
+        data_loc = os.path.join(loc, 'id')
+        with open(data_loc, 'r+') as f:
             da = f.read()
             self.idcard_addr = {d.split()[0]:d.split()[1] for d in da.splitlines()}
 
@@ -87,4 +90,8 @@ class idcard_res():
 
 if __name__ == '__main__':
     id_info = idcard_res()
+    # 默认输出地址信息,可选输出省份、性比、年龄
     print(id_info.find('612129198106120810','address'))
+    print(id_info.find('612129198106120810','province'))
+    print(id_info.find('612129198106120810','sex'))
+    print(id_info.find('612129198106120810','age'))
